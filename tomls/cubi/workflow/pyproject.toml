@@ -7,3 +7,8 @@ version = "prototype"
 pid = "undefined"
 system = "system"
 version = "prototype"
+
+[cubi.workflow.upstream]
+pid = "undefined"  
+name = "undefined"
+version = "prototype"
