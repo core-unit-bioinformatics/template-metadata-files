@@ -1,4 +1,4 @@
-code t[cubi.project]
+[cubi.project]
 pid = "undefined"
 type = "type"
 name = "undefined"
