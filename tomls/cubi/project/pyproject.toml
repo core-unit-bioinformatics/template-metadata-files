@@ -20,8 +20,3 @@ version = "version_b"
 pid = "pid_c"
 name = "c"
 version = "version_c"
-
-[cubi.project.workflow.upstream]
-pid = "undefined"  
-name = "undefined"
-version = "prototype"
