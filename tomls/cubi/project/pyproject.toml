@@ -4,7 +4,7 @@ type = "type"
 name = "undefined"
 start_date = 2000-01-01
 end_data = 2099-12-31
-version = ""
+version = "optional"
 
 [[cubi.project.workflow]]
 pid = "pid_a"
