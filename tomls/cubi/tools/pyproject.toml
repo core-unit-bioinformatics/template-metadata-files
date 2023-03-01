@@ -1,0 +1,13 @@
+[cubi.tools]
+pid="https://github.com/core-unit-bioinformatics/cubi-tools"
+# the PID is hard-coded because there can only
+# be one CUBI-tools repository
+version="pkg_version"
+
+[[cubi.tools.script]]
+name="script_a"
+version="version_a"
+
+[[cubi.tools.script]]
+name="script_b"
+version="version_b"
