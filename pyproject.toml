@@ -1,6 +1,6 @@
 [cubi.metadata]
 pid = "undefined"
-version = "1.3.2"
+version = "1.4.0"
 
 [cubi.metadata.naming.workflow.system]
 smk="snakemake"
