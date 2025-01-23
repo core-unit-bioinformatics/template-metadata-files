@@ -9,6 +9,8 @@ cwl="common-workflow-language"
 wdl="workflow-definition-language"
 
 [cubi.metadata.naming.project.type]
+deprecated = true
+comment = "Project type is a deprecated attribute as of 2025"
 dev="development"
 run="production-run"
 bmk="benchmark"
