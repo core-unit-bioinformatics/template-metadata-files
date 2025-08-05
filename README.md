@@ -35,6 +35,43 @@ of workflows and projects, and naming conventions:
 
 [CUBI naming conventions in the knowledge base](https://github.com/core-unit-bioinformatics/knowledge-base/wiki/Naming-and-style#naming-repositories)
 
+
+## Conda environment template
+
+This repository contains a minimal Conda environment file despite the fact that this repo
+does not include any executable code. This Conda environment template file should be used
+as the base file for more complex environments where applicable and reasonable:
+
+[Conda env template](envs/conda/template.yaml)
+
+This template environment encodes a few hard requirements for CUBI code developments:
+
+```YAML
+dependencies:
+  - Python=3.11.*  # the target Python3 version
+  - pip=25.1.*
+  # For conda itself:
+  # most recent; whatever can be resolved.
+  # Oct. '23 marks the switch to the libmamba
+  # solver and since then, there should not be
+  # too much of a speed difference between
+  # conda and mamba
+  - conda>23.10.0
+  # All of the below:
+  # There are config options set for these
+  # tools in 'tomls/formatting/pyproject.toml'
+  # and, hence, changing any of the versions
+  # requires checking that all options/parameters
+  # are still supported:
+  - pyyaml=6.0.*
+  - toml=0.10.*
+  - semver=3.0.*
+  - pylint=3.3.*
+  - isort=6.0.*
+  - black=24.10.*
+  - ruff=0.12.*
+```
+
 # Citation
 
 If not indicated otherwise above, please follow [these instructions](CITATION.md) to cite this repository in your own work.
