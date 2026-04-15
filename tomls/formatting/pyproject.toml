@@ -29,3 +29,7 @@ skip-magic-trailing-comma = false
 select = ["E", "F", "B", "I", "UP"]
 ignore = []
 unfixable = ["B"]
+
+[tool.snakefmt]
+line_length = 88
+include = '\.smk$|^Snakefile'
