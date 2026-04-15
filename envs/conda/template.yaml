@@ -1,12 +1,12 @@
 name: conda_env_template
 dependencies:
-  - Python=3.11.*
-  - pip=25.1.*
-  - conda>23.10.0
+  - Python=3.13.*
+  - pip=26.*
+  - conda>25.0.0
   - pyyaml=6.0.*
   - toml=0.10.*
-  - semver=3.0.*
-  - pylint=3.3.*
-  - isort=6.0.*
-  - black=24.10.*
-  - ruff=0.12.*
+  - semver=3.*
+  - pylint=4.*
+  - isort=8.*
+  - black=26.*
+  - ruff=0.15.*
