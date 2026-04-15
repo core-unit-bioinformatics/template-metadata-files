@@ -20,13 +20,14 @@ By convention, and for convenience, all CUBI metadata are organized in form of a
 containing a minimal amount of descriptive entries. This file must be located at the top-level of the
 respective repository. The "hierarchy" in these files is as follows:
 
-1. include [Python tool settings](tomls/tool/pyproject.toml) for coherent formatting of Python code
-    - if the repository does not contain any Python code, this may be omitted
-2. include [the CUBI metadata information](pyproject.toml), i.e., the top-level `pyproject.toml` in this repository
+1. include [(Python) code formatting settings](tomls/formatting/pyproject.toml) for coherent formatting of Python and Snakemake code
+    - if the repository does not contain any Python/Snakemake code, this may be omitted
+2. include [the CUBI metadata information](pyproject.toml), i.e., the top-level `pyproject.toml` of this repository
 3. include specific metadata...
     - ...for a [project repository](tomls/cubi/project/pyproject.toml)
-    - ...for a [workflow template repository](tomls/cubi/workflow/template/pyproject.toml)
+    - ...for the [workflow template repository](tomls/cubi/workflow/template/pyproject.toml)
     - ...for a [workflow repository](tomls/cubi/workflow/pyproject.toml)
+    - ...for the [CUBI Tools repository](tomls/cubi/tools/pyproject.toml)
 
 As a reminder, read the development guidelines to learn about key characteristics
 of workflows and projects, and naming conventions:
@@ -48,15 +49,15 @@ This template environment encodes a few hard requirements for CUBI code developm
 
 ```YAML
 dependencies:
-  - Python=3.11.*  # the target Python3 version
-  - pip=25.1.*
+  - Python=3.13.*  # the target Python3 version
+  - pip=26.*
   # For conda itself:
   # most recent; whatever can be resolved.
   # Oct. '23 marks the switch to the libmamba
   # solver and since then, there should not be
   # too much of a speed difference between
   # conda and mamba
-  - conda>23.10.0
+  - conda>25.0.0
   # All of the below:
   # There are config options set for these
   # tools in 'tomls/formatting/pyproject.toml'
@@ -65,11 +66,11 @@ dependencies:
   # are still supported:
   - pyyaml=6.0.*
   - toml=0.10.*
-  - semver=3.0.*
-  - pylint=3.3.*
-  - isort=6.0.*
-  - black=24.10.*
-  - ruff=0.12.*
+  - semver=3.*
+  - pylint=4.*
+  - isort=8.*
+  - black=26.*
+  - ruff=0.15.*
 ```
 
 # Citation
