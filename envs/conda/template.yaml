@@ -5,7 +5,7 @@ dependencies:
   - conda>25.0.0
   - pyyaml=6.0.*
   - toml=0.10.*
-  # Explicitly added in v2.0.1
+  # Explicitly added in v2.1.0
   # tomlkit will gradually replace toml, e.g.,
   # in the cubi-tools package
   - tomlkit=0.15.*
